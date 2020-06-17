@@ -13,9 +13,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 
+var url = "mongodb+srv://teddy:newdb55@myapi-horsb.mongodb.net/newdb?retryWrites=true&w=majority";
 
-
-  mongoose.connect('mongodb+srv://root:0995@cluster0-2j0z7.mongodb.net/newdb', {useUnifiedTopology: true, useNewUrlParser: true  });
+  mongoose.connect(url, {useUnifiedTopology: true, useNewUrlParser: true  });
 
 
 
